@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>NModAPI Document</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/article_style.css" rel="stylesheet">
+    <link href="../css/hightlight-styles/androidstudio.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+	<div class="page__inner">
+	  <div class="main main_width-limit">
+		<div class="content">
+
+          <html>
+			<body>
+			  <p><b>Форматирование текста</b></p>
+			  <p>Для форматирования текста в Minecraft используются коды форматирования. Каждый код форматирования начинается с символа §.</p>
+			  <p><ul><li>текст в чате;</li>
+				  <li>текст в книге с пером;</li>
+				  <li>текст в файлах локализации (пример тому название фиолетового цвета у золотого яблока);</li>
+				  <li>текст на табличках;</li>
+				  <li>описание сервера;</li>
+				  <li>название мира;</li>
+				  <li>название предметов;</li>
+				  <li>подпись к предмету (Lore);</li>
+				  <li>имена сущностей;/li></ul></p>
+			  <p><b>Форматирование</b></p>
+			  <p>Тип форматирования делится на два типа: первый — это «цветовое форматирование», второй — «форматирование текста». Первый можно использовать со вторым, например, можно сделать жирный текст зелёного цвета./p>
+				<p><b>Цветовое форматирование</b></p>
+				<table class="wikitable" style="text-align:center;"><tbody><tr><th>Код
+					  </th>
+					  <th>Название
+					  </th>
+					  <th>Техническое название
+					  </th>
+					  <th>Цвет текста
+					  </th>
+					  <th>Цвет тени
+					  </th>
+					  <th><span class="explain tooltip" title="при написании в чате">Цвет тени</span>
+					  </th></tr><tr style="background-color: #000; color: #FFF"><td>§0</td>
+					  <td>Чёрный</td>
+					  <td>black</td>
+					  <td>000000</td>
+					  <td>000000
+					  </td></tr><tr style="background-color: #00A; color: #FFF"><td>§1</td>
+					  <td>Тёмно-синий</td>
+					  <td>dark_blue</td>
+					  <td>0000AA</td>
+					  <td>00002A
+					  </td></tr><tr style="background-color: #0A0; color: #FFF"><td>§2</td>
+					  <td>Тёмно-зелёный</td>
+					  <td>dark_green</td>
+					  <td>00AA00</td>
+					  <td>002A00
+					  </td></tr><tr style="background-color: #0AA; color: #FFF"><td>§3</td>
+					  <td>Темно-сине-зеленый</td>
+					  <td>dark_aqua</td>
+					  <td>00AAAA</td>
+					  <td>002A2A
+					  </td></tr><tr style="background-color: #A00; color: #FFF"><td>§4</td>
+					  <td>Темно-красный</td>
+					  <td>dark_red</td>
+					  <td>AA0000</td>
+					  <td>2A0000
+					  </td></tr><tr style="background-color: #A0A; color: #FFF"><td>§5</td>
+					  <td>Темно-фиолетовый</td>
+					  <td>dark_purple</td>
+					  <td>AA00AA</td>
+					  <td>2A002A
+					  </td></tr><tr style="background-color: #FA0"><td>§6</td>
+					  <td>Золотой</td>
+					  <td>gold</td>
+					  <td>FFAA00</td>
+					  <td>2A2A00
+					  </td></tr><tr style="background-color: #AAA"><td>§7</td>
+					  <td>Серый</td>
+					  <td>gray</td>
+					  <td>AAAAAA</td>
+					  <td>2A2A2A
+					  </td></tr><tr style="background-color: #555; color: #FFF"><td>§8</td>
+					  <td>Темно-серый</td>
+					  <td>dark_gray</td>
+					  <td>555555</td>
+					  <td>151515
+					  </td></tr><tr style="background-color: #55F; color: #FFF"><td>§9</td>
+					  <td>Синий</td>
+					  <td>blue</td>
+					  <td>5555FF</td>
+					  <td>15153F
+					  </td></tr><tr style="background-color: #5F5"><td>§a</td>
+					  <td>Зелёный</td>
+					  <td>green</td>
+					  <td>55FF55</td>
+					  <td>153F15
+					  </td></tr><tr style="background-color: #5FF"><td>§b</td>
+					  <td>Сине-зеленый</td>
+					  <td>aqua</td>
+					  <td>55FFFF</td>
+					  <td>153F3F
+					  </td></tr><tr style="background-color: #F55"><td>§c</td>
+					  <td>Красный</td>
+					  <td>red</td>
+					  <td>FF5555</td>
+					  <td>3F1515
+					  </td></tr><tr style="background-color: #F5F"><td>§d</td>
+					  <td>Фиолетовый</td>
+					  <td>light_purple</td>
+					  <td>FF55FF</td>
+					  <td>3F153F
+					  </td></tr><tr style="background-color: #FF5"><td>§e</td>
+					  <td>Жёлтый</td>
+					  <td>yellow</td>
+					  <td>FFFF55</td>
+					  <td>3F3F15
+					  </td></tr><tr style="background-color: #FFF"><td>§f</td>
+					  <td>Белый</td>
+					  <td>white</td>
+					  <td>FFFFFF</td>
+					  <td>3F3F3F
+					  </td></tr></tbody></table>
+			</body>
+		  </html>
+
+		</div>
+	  </div>               
+	</div>    
+
+
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
