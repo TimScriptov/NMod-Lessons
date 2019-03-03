@@ -23,11 +23,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Цвета"
+			android:text="@string/colors"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/libraryColor"
-			android:onClick="libraryColorBtn"/>
+			android:onClick="libraryColor"/>
 
 		<Button
 			android:textColor="#ffffffff"
@@ -37,11 +37,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Названия текстур"
+			android:text="@string/texture_name"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/libraryTextureName"
-			android:onClick="libraryTextureNameBtn"/>
+			android:onClick="libraryTextureName"/>
 
 		<Button
 			android:textColor="#ffffffff"
@@ -51,11 +51,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="ID блоков/предметов"
+			android:text="@string/id"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/libraryID"
-			android:onClick="libraryIDBtn"/>
+			android:onClick="libraryID"/>
 
 	</LinearLayout>
 

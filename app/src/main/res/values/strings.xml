@@ -2,6 +2,14 @@
 <resources>
 
     <string name="app_name">NModLessons</string>
-    <string name="hello_world">Hello world!</string>
-
+	<string name="nmodapu_name">NModAPI Documentation</string>
+    <string name="documentation">Documentation</string>
+	<string name="lessons">Lessons</string>
+	<string name="library">Library</string>
+	<string name="open_aide">Open AIDE</string>
+	<string name="open_moddedpe">Open ModdedPE</string>
+	<string name="colors">Colors</string>
+	<string name="texture_name">Texture Names</string>
+	<string name="id">ID Blocks/Items</string>
+	
 </resources>

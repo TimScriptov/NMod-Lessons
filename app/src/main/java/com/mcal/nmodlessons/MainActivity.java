@@ -23,6 +23,7 @@ import android.widget.Toast;
 import android.widget.Button;
 import android.graphics.Typeface;
 import android.content.Intent;
+import android.widget.TextView;
 
 //##################################################################
 /**
@@ -44,15 +45,19 @@ public class MainActivity extends Activity
 		Button libraryNModBtn = findViewById(R.id.libraryNMod);
 		Button openAideBtn = findViewById(R.id.openAide);
         Button openModdedPEBtn = findViewById(R.id.openModdedPE);
+		TextView copyrightTextView = findViewById(R.id.copyright);
+		TextView versionTextView = findViewById(R.id.version);
         Typeface createFromAsset = Typeface.createFromAsset(getAssets(), "fonts/test.ttf");
 		nModAPIDocumentationBtn.setTypeface(createFromAsset);
 		lessonsNModBtn.setTypeface(createFromAsset);
 		libraryNModBtn.setTypeface(createFromAsset);
 		openAideBtn.setTypeface(createFromAsset);
 		openModdedPEBtn.setTypeface(createFromAsset);
+		copyrightTextView.setTypeface(createFromAsset);
+		versionTextView.setTypeface(createFromAsset);
     }
 
-	public void nModAPIDocumentationBtn(View view)
+	public void nModAPIDocumentation(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try
@@ -65,7 +70,7 @@ public class MainActivity extends Activity
         }
     }
 
-	public void lessonsNModBtn(View view)
+	public void lessonsNMod(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try
@@ -78,7 +83,7 @@ public class MainActivity extends Activity
         }
     }
 
-	public void libraryNModBtn(View view)
+	public void libraryNMod(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try

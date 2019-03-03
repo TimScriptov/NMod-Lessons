@@ -23,11 +23,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Документация"
+			android:text="@string/documentation"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/nModAPIDocumentation"
-			android:onClick="nModAPIDocumentationBtn"/>
+			android:onClick="nModAPIDocumentation"/>
 
 		<Button
 			android:textColor="#ffffffff"
@@ -37,11 +37,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Уроки"
+			android:text="@string/lessons"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/lessonsNMod"
-			android:onClick="lessonsNModBtn"/>
+			android:onClick="lessonsNMod"/>
 
 		<Button
 			android:textColor="#ffffffff"
@@ -51,11 +51,11 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Библиотека"
+			android:text="@string/library"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/libraryNMod"
-			android:onClick="libraryNModBtn"/>
+			android:onClick="libraryNMod"/>
 
 		<Button
 			android:textColor="#ffffffff"
@@ -65,7 +65,7 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Открыть AIDE"
+			android:text="@string/open_aide"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/openAide"
@@ -79,11 +79,39 @@
 			android:shadowRadius="0.1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Открыть ModdedPE"
+			android:text="@string/open_moddedpe"
 			android:layout_margin="5dp"
 			android:background="@drawable/moddedpe_main_start_button_drawable"
 			android:id="@+id/openModdedPE"
 			android:onClick="openModdedPE"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:layout_weight="1.0"
+			android:gravity="bottom">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="©Иван Тимашков"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/copyright"/>
+
+			<View
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.0"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="v1.0"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/version"/>
+
+		</LinearLayout>
 
 	</LinearLayout>
 

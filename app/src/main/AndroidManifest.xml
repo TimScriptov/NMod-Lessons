@@ -23,27 +23,27 @@
 		
 		<activity
 			android:name=".DocumentationActivity"
-			android:label="NModAPI документация"/>
+			android:label="@string/nmodapu_name"/>
 		
 		<activity
 			android:name=".LessonsActivity"
-			android:label="Уроки"/>
+			android:label="@string/lessons"/>
 		
 		<activity
 			android:name=".LibraryActivity"
-			android:label="Библиотека"/>
+			android:label="@string/library"/>
 		
 		<activity
 			android:name=".ColorsActivity"
-			android:label="Цвета"/>
+			android:label="@string/colors"/>
 		
 		<activity
 			android:name=".TextureNameActivity"
-			android:label="Название текстур"/>
+			android:label="@string/texture_name"/>
 		
 		<activity
 			android:name=".IDActivity"
-			android:label="ID блоков/предметов"/>
+			android:label="@string/id"/>
 		
     </application>
 

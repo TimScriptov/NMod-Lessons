@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NModLessons</string>
+    <string name="documentation">Документация</string>
+	<string name="lessons">Уроки</string>
+	<string name="library">Библиотека</string>
+	<string name="open_aide">Открыть AIDE</string>
+	<string name="open_moddedpe">Открыть ModdedPE</string>
+	<string name="colors">Цвета</string>
+	<string name="texture_name">Названия текстур</string>
+	<string name="id">ID блоков/предметов</string>
+	
+</resources>

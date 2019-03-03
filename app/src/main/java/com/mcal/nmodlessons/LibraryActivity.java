@@ -50,7 +50,7 @@ public class LibraryActivity extends Activity
 		libraryIDBtn.setTypeface(createFromAsset);
     }
 
-	public void libraryColorBtn(View view)
+	public void libraryColor(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try
@@ -63,7 +63,7 @@ public class LibraryActivity extends Activity
         }
     }
 
-	public void libraryTextureNameBtn(View view)
+	public void libraryTextureName(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try
@@ -76,7 +76,7 @@ public class LibraryActivity extends Activity
         }
     }
 
-	public void libraryIDBtn(View view)
+	public void libraryID(View view)
 	{
         MediaPlayer.create(this, R.raw.click).start();
         try
