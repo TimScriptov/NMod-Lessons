@@ -45,6 +45,32 @@
 			android:name=".IDActivity"
 			android:label="@string/id"/>
 		
+		<activity
+			android:name=".Lessons1"/>
+		
+		<activity
+			android:name=".Lessons2"/>
+		
+		<activity
+			android:name=".Lessons3"/>
+		
+		<activity
+			android:name=".Lessons4"/>
+		
+		<activity
+			android:name=".Lessons5"/>
+		
+		<activity
+			android:name=".Lessons6"/>
+		
+		<activity
+			android:name=".Lessons7"/>
+		
+		<activity
+			android:name=".Lessons8"/>
+		
+		<activity
+			android:name=".Lessons9"/>
     </application>
 
 </manifest>

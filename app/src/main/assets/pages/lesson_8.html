@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="Иван Тимашков">
+		<title>Урок 8. Создание картин</title>
+
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="../css/article_style.css" rel="stylesheet">
+		<link href="../css/hightlight-styles/androidstudio.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="page__inner">
+			<div class="main main_width-limit">
+				<div class="content">
+
+					<html>
+<body>
+<pre><code class="kotlin">//Подключаем стандартные библиотеки
+#include &lt;jni.h>
+#include &lt;dlfcn.h>
+#include &lt;stdlib.h>
+#include &lt;vector>
+#include &lt;string>
+
+#include "Substrate.h"
+
+#include "minecraftpe/motive/Motive.h"
+
+//Инициализируем картину
+static Motive* Furniture;
+//передаём из класса Motive метод initCustomMotives
+void Motive::initCustomMotives() {
+  //Создаём свою картину
+  Furniture  = new Motive("PeClubs", 65, 32, 128, 160, true);
+  /* Motive("PeClubs", 65, 32, 128, 160, true); - как раз таки создаётся картина, используется метод из класс Motive(std::string, int, int, int, int, bool);
+   * std::string - имя картины
+   * 65 и 32 - размеры нашей картины в пикселях
+   * 128 и 160 - это позиции картины, тоже в пикселях
+   */
+}
+
+//Инициализируем картину, чтобы она появилась в игре
+void initMod() {
+  Motive::initCustomMotives();
+}
+
+//Функция списка картин
+static std::vector&lt;const Motive*> (*_Motive$getAllMotivesAsList)();
+static std::vector&lt;const Motive*> Motive$getAllMotivesAsList() {
+
+  std::vector&lt;const Motive*> retval = _Motive$getAllMotivesAsList();
+  //Добавляем нашу картину в список картин
+  retval.push_back(Furniture);
+  return retval;
+}
+
+JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved) {
+  void* handle = dlopen("libminecraftpe.so", RTLD_LAZY);	
+  initMod();
+  //Импортируем метод из Motive.h
+  MSHookFunction((void*) &Motive::getAllMotivesAsList, (void*) &Motive$getAllMotivesAsList, (void**) &_Motive$getAllMotivesAsList);
+
+  // MSHookFunction((void*) &Item::initItems, (void*) &Item$initItems, (void**) &_Item$initItems);
+
+  return JNI_VERSION_1_2;
+}
+</code></pre>
+						</body>
+					</html>
+
+				</div>
+			</div>               
+		</div>    
+
+
+		<script src="../js/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>

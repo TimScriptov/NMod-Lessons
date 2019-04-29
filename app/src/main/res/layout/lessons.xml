@@ -6,5 +6,125 @@
 	android:orientation="vertical"
 	android:background="@drawable/mcd_bg">
 
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 1. Изменение сплеша и версии игры!"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson1"
+		android:onClick="lesson1"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 2. Добавление скинпака"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson2"
+		android:onClick="lesson2"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 3. Добавление своего предмета"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson3"
+		android:onClick="lesson3"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 4. Добавление крафта"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson4"
+		android:onClick="lesson4"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 5. LevelLoaded"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson5"
+		android:onClick="lesson5"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 6. DeathHook"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson6"
+		android:onClick="lesson6"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 7. ClientMessage"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson7"
+		android:onClick="lesson7"
+		android:gravity="left|center"/>
+
+	<Button
+		android:textColor="#ffffffff"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="3.0"
+		android:shadowRadius="0.1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Урок 8. Создание картин"
+		android:layout_margin="5dp"
+		android:background="@drawable/moddedpe_main_start_button_drawable"
+		android:id="@+id/lesson8"
+		android:onClick="lesson8"
+		android:gravity="left|center"/>
+
 </LinearLayout>
 
